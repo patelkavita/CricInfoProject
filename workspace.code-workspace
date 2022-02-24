@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\Documents\\cricinfo-ritik"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
