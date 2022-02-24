@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: sans-serif; */
+}
+#navMenu{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 2rem 4rem;
+    width: 100vw;
+    height: 30px;
+    background-color: #038dcc;
+}
+.menu{
+    font-size: .7rem;
+    color: #d1d5dd;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 1rem ;
+}
+.menu:hover{
+border-bottom: .1rem solid #d1d5dd; 
+}
+
+.menu:first-child{
+    border-bottom: .1rem solid #d1d5dd;
+    margin-right: 1rem ;
+}
+
+#card{
+    display: flex;
+    width: 100vw;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: #038dcc;
+}
+.cardDetail{
+    width: 25%;
+    height: 30vh;
+    color: #65676b;
+    padding: .1rem 1rem 1rem 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+.cardDetail>div>p:first-child{
+font-size: .6rem;
+font-weight: bolder;
+color: #57585a;
+}
+.cardDetail>p{
+    font-size: .5rem;
+    margin: .4rem 0;
+    font-weight: bold;
+    }
+.team{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.image{
+ width: 20px;
+}
+
+.spantag{
+    border: .01rem solid #cdcfd4;
+    padding: 5px 2rem;
+    margin-top: 90px;
+    border-radius: 5px;
+    font-size: .7rem;
+}
+
+.main-carousel{
+    background-color: #038dcc;
+    padding: 0 4rem;
+    padding-bottom: 1rem;
+
+}
+.miniBar{
+    width: 100vw;
+    height: 40px;
+    background-color: #03a9f4!important;
+    position: relative;
+    z-index: 1;
+}
