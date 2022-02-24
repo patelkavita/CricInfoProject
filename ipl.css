@@ -1,0 +1,74 @@
+@import "./reset.css";
+
+.main {
+    width: 656px ;
+    height: 369px ;
+    border: solid black 1px ;
+    border-radius: 10px ;
+    background: url("https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/312200/312222.6.jpg") ;
+   border:1px solid black;
+}
+#banner{
+    overflow: hidden;
+    width: 656px ;
+    margin:auto ;
+    position:relative;
+    font-size: 22px ;
+
+}
+.pos{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    color:aliceblue ;
+}
+
+#banner:hover .main {
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.general {
+    width: 656px ;
+    height: 187px ;
+    margin: auto ;
+    margin-top: 16px ;
+    border-radius: 16px ;
+    display:flex ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.general > #pic {
+    height: 155px ;
+    width: 210px ;
+    margin: 16px ;
+    border-radius: 5px ;
+    margin-right: 8px;
+    overflow: hidden;
+}
+.general > #text {
+    height: 155px ;
+    width: 398px ;
+    margin: 16px ;
+    border-radius: 5px ;
+    margin-left: 8px;
+}
+#pic > img {
+    width: 210px ;
+    height: 155px ;
+    border-radius: 5px ;
+}
+.heading:hover {
+    color:dodgerblue ;
+}
+.heading {
+    margin-top: 2px ;
+    font-size: 22px;
+    font-weight: bold;
+}
+.paragraph {
+    margin-right: 8px ;
+    margin-top: 10px;
+    font-size: 18px;
+}
+#pic> img:hover {
+    transform: scale(1.08);
+}
