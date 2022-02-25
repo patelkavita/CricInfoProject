@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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" />
+    <title>Document</title>
+    <style>
+        #mainbody{
+          background-color: ghostwhite;
+        }
+
+        *{
+            justify-content: center;
+            font-family: sans-serif;
+            color: rgb(43, 44, 45);
+        }
+
+        p{
+            color: #24486a;
+        }
+        #bodyy{
+         /* border: 1px solid blue; */
+            width: 91%;
+            margin: auto;
+
+        }
+        #adv{
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        #main{
+            display: grid;
+            box-sizing: border-box;
+            justify-content: center;
+            grid-template-columns: 22% 53% 22% ;
+            grid-template-rows:auto ;
+            justify-content: space-between;
+        }
+        #left{
+           
+           /* gap: 20px;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;
+            box-sizing: border-box; */
+        }
+        #middle{
+             /* border: 1px solid red;  */
+             
+            
+         }
+        #first:nth-last-child(p):hover{
+                color: #03a9f4;
+        }
+        .ask{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+            width: 100%;
+            height: auto;
+           /* margin: auto; */
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+           border-radius: 10px;
+           box-sizing: border-box;
+        }
+        .askimg{
+           
+            padding-top: 15px;
+            width: 60%;
+            justify-content: center;
+            margin: auto;
+        }
+        .askimg>img{
+            
+            width: 100%;
+
+        }
+        .question>p{
+            margin-top: -10px;
+            font-size: 14px;
+            padding: 10px;
+            text-align: justify;
+            padding-bottom: 15px;
+        }
+       .question>p:hover{
+                color: #03a9f4;
+        }
+        .keyseries{
+            background-color: white;
+            /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+        }
+        .keyseries>h4{
+            padding-top: 15px;
+            margin-left: 15px;
+        }
+        .keyseries>div:hover{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+        }
+        .keyseries>div>p{
+                margin-left: 20px;
+                padding: 10px;
+        }
+        .quickLinks{
+            background-color: white;
+            /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+        }
+        
+        .quickLinks>h4{
+            padding-top: 15px;
+            margin-left: 15px;
+        }
+        .quickLinks>div:hover{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+        }
+        .quickLinks>div>p{
+                margin-left: 20px;
+                padding: 10px;
+               
+        }
+        .espnapps{
+            background-color: white;
+            /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+        }
+        .espnapps>h4{
+            padding-top: 15px;
+            margin-left: 15px;
+        }
+        .espnapps>div:hover{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+        }
+        .espnapps>div>p{
+                margin-left: 20px;
+                padding: 10px;
+        }
+        .followespn{
+            background-color: white;
+            /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+        }
+        .followespn>h4{
+            padding-top: 15px;
+            margin-left: 15px;
+        }
+        .followespn>div:hover{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+        }
+        .followespn>div>p{
+                margin-left: 20px;
+                padding: 10px;
+        }
+        .espnsites{
+            background-color: white;
+           /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+        }
+        .espnsites>h4{
+            padding-top: 15px;
+            margin-left: 15px;
+        }
+        .espnsites>div:hover{
+            background-color: whitesmoke;
+            box-sizing: border-box;
+        }
+        .espnsites>div>p{
+                margin-left: 20px;
+                padding: 10px;
+        }  
+
+        /* <!---middle styles--> */
+        #middle{
+            
+            justify-content: center;
+            font-family: BentonSans,Arial,Noto Sans,sans-serif;
+        }
+       #first{
+           justify-content: left;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+          /* justify-content: center; */
+          /* margin: auto; */
+       }
+       .head>h3{
+           margin-top: -0px;
+           padding-top: 15px;
+       }
+       .head>p{
+           margin-left: 15px;
+           margin-top: -10px;
+       }
+       .head>h3{
+           margin-left: 15px;
+       }
+       #result{
+          
+           width: 90%;
+           margin-left: 5% ;
+       }
+       #result>h3{
+           margin-top: 0%;
+       }
+       #result>div{
+        display: flex;
+           justify-content: space-between;
+       }
+       #result>div>div{
+           /* border: 1px solid red; */
+           display: flex;
+           justify-content: space-between;
+       }
+       #result>div>div>img{
+           padding: 10px;
+           margin-top: 12px;
+           width: 20px;
+           height: 30%;
+       }
+       .image{
+           overflow: hidden;
+           border-radius: 10px;
+           /* border-radius: 15px; */
+           margin-top: 20px;
+        /* border: 1px solid black; */
+           width: 90%;
+           margin-left: 5% ;
+       }
+       .image>img{
+           width: 100%;
+           height: 100%;
+           border-radius: 10px;
+           box-sizing: border-box;
+       }
+       .zoom:hover{
+           transform: scale(1.05);
+          
+       }
+       .zoomlink:hover{
+                color: #03a9f4;
+       }
+       /* hr style */
+      *hr{
+           height: 0.01px;
+           background-color: grey;
+          border: none;
+       }
+       #right{
+           gap: 20px;
+            /* border: 1px solid red; */
+            /* display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: auto;
+            box-sizing: border-box; */
+        }
+       #r_first{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+           background-color: white;
+           border: 1px solid white;  
+           border-radius: 10px;
+           box-sizing: border-box;
+           padding-bottom: 15px;
+           box-sizing: border-box;
+       }
+       .d_flex{
+           box-sizing: border-box;
+           display: grid;
+           grid-template-columns: 10% 90%;
+           /* justify-content: space-evenly; */ 
+           /* padding: 10px; */
+       }
+       .d_flex:hover{
+          background-color: whitesmoke;
+       }
+       .d_flex>div{
+           
+           margin: auto;
+       }
+       #angledpara{
+           /* border: 1px solid red; */
+           margin-left: 0px;
+                text-align: left !important;
+       }
+       #angledpara>p{
+                text-align: left !important;
+       }
+       .advimg{
+           width: 100%;
+           margin-top: 20px;
+       }
+       hr+p:hover{
+           color: #03a9f4;
+       }
+       .imagefirst{
+           position: relative;
+           text-align: center;
+           /* color: #24486a; */
+           overflow: hidden;
+           border-radius: 15px;
+           box-shadow: inset 0 -100px 200px -100px black;
+
+       }
+       .imagefirst:hover{
+                border-radius: 15px;
+              
+       }
+       .zoomlink1>h1{
+           color: white ;
+           position: absolute;
+           top: 60%;
+           text-shadow: 16px 80px 60px black;
+           margin-left: 23px;
+          text-align: left;
+       }
+       .zoomlink2>p{
+        color: white !important;
+           position: absolute;
+           top: 80%;
+           text-shadow: 2px 10px 10px black;
+           margin-left: 23px;
+           text-align: left;
+       }
+       .coverage{
+           display: flex;
+           justify-content: left !important;
+           padding: 10px;
+           margin-top: 15px;
+       }
+      .coverage1{
+          margin-left: 15px !important;
+          color: red;
+          font-weight: 1000;
+      }
+      .coverage2{
+          margin-left: 15px !important;
+          
+      }
+      .coverage2:hover{
+          color: #03a9f4;
+          
+      }
+      .coverage2>p:hover{
+          float: right;
+      }
+      #firstimage1{
+          padding-bottom: 10px;
+          background-color: white;
+          margin-bottom: 15px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          border-radius: 10px;
+      }
+      .angled{
+         color: red; font-weight: 1000; margin-left: 10px !important; 
+      }
+
+    </style>
+</head>
+<body>  <div id="mainbody">
+    <img  id="adv" src="https://tpc.googlesyndication.com/daca_images/simgad/11154198517497482764" alt="">
+    <div id="bodyy">
+    <div id="main">
+           <!--- //left starts from here -->
+            <div id="left" >
+                <!---//ask section starts-->
+                <div class="ask">
+                   <div class="askimg"><img  src="https://wassets.hscicdn.com/static/images/nlp-logo.svg" alt="askinfo" > </div> 
+                   <div class="question" > <p >Who has the best strike rate in men's T20Is for India (min 200 balls faced)</p> </div>
+                   <div class="askques"><a href="https://www.espncricinfo.com/ask"></a></div>
+                </div>
+               <!---keyseries starts--> 
+                <div class="keyseries">
+                    <h4>Key Series</h4>
+                    <hr>
+                    <div class><p>IPL 2022</p></div>
+                    <div class><p>India v West Indies</p></div>
+                    <div class><p>India v Sri lanka</p></div>
+                    <div class><p>IND-W in New Zealand</p></div>
+                    <div class><p>Ranji Trophy</p></div>
+                    <div class><p>Australia v Sri Lanka</p></div>
+                    <div class><p>West Indies v England</p></div>
+                    <div class><p>New Zealand v South Africa</p></div>
+                    <div class><p>Bangladesh v Afghanisthan</p></div>
+                    <div class><p>Sheffield Shield</p></div>
+                    <div class><p>PSL 2022</p></div>
+                    <div class><p>BPL 2022</p></div>
+                    <div class><p>Marsh Cup</p></div>
+                    <div class><p>T20 World Cup Qualifier</p></div>
+                    <div class><p>Women's World Cup</p></div>
+                    <div class><p>Women's Championship</p></div>
+                    <div class><p>World Test championship</p></div>
+                    <div class><p>World Cup Super League</p></div>
+                </div>
+                <!---Quick Links-->
+                <div class="quickLinks">
+                    <h4>Quick Links</h4>
+                    <hr>
+                    <div class><p>T20 Time Out</p></div>
+                    <div class><p>T20 Time Out Hindi</p></div>
+                    <div class><p>Match Day</p></div>
+                    <div class><p>ICC Rankings</p></div>
+                    <div class><p>Fantasy Pick</p></div>
+                    <div class><p>Dream Big Stories</p></div>
+                    <div class><p>Dream Big Champs</p></div>
+                    <div class><p>Haan Ya Naa</p></div>
+                </div>
+               <!---Espn Apps-->
+               <div class="espnapps">
+                <h4>ESPNcricinfo Apps</h4>
+                <hr>
+                <div class><p>Android App</p></div>
+                <div class><p>iOS App</p></div>
+               </div>
+               <!---Follow ESPN cricinfo-->
+               <div class="followespn">
+                <h4>Follow ESPNcricinfo</h4>
+                <hr>
+                <div class><p>Instagram</p></div>
+                <div class><p>Twitter</p></div>
+                <div class><p>Facebbok</p></div>
+                <div class><p>Youtube</p></div>
+               </div>
+               <!---ESPN sites-->
+               <div class="espnsites">
+                <h4>ESPN sites</h4>
+                <hr>
+                <div class><p>The Cricket Monthly</p></div>
+                <div class><p>ESPN</p></div>
+               </div>
+            </div>
+
+            <!---Left Ends-->
+            <div id="middle">
+
+                <div id="firstimage1">
+                    <!-- <div class="head">
+                      <h3>AGE OF BOWLING</h3>
+                    </div>
+                    <hr> -->
+                    <!---result starts-->
+                   
+                    <!-- ********result endsssss********** -->
+                    <!---image starts-->    
+                    <div class="imagefirst">
+                        <img style="width: 100%;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/334700/334771.6.jpg" alt="">
+                       <div class="zoomlink1"> <h1  >'I want to lift the game, beacuse in India there is question mark over everything women do'</h1> </div>
+                        <div class="zoomlink2"> <p  >The India spearhead looks back at her two decades in cricket, the evolution of fast bowling in the women's game, and her own transformation over the years</p> </div>
+                    </div>
+                   
+                    <!-- <hr> -->
+                    <div class="coverage"> <div class="coverage1" >></div> <div class="coverage2" >The Cricket Academy</div> </div>
+                    
+                </div>
+
+
+
+                <div id="first">
+                    <div class="head">
+                      <h3>NEW ZEALAND VS INDIA</h3>
+                      <p>4TH WOMEN'S ODI QUEENS TOWN</p>
+                    </div>
+                    <hr>
+                    <!---result starts-->
+                    <div id="result">
+                       <h3>RESULT</h3>
+                        <div>
+                            <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/640px-Flag_of_New_Zealand.svg.png" alt="">
+                            <h2>NEW ZEALAND WOMEN</h2>
+                            </div>
+                            <h2>191/5</h2>
+                        </div>
+                        <div>
+                            <div>
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="">
+                            <p style="font-weight: 400;">INDIA WOMEN</p>
+                            </div>
+                            <p>(17.5/20 ov. target 192) 128</p>
+                        </div>
+                        <p>NZ Women won by 63 runs</p>
+                    </div>  
+                    <hr>
+                    <!---image starts-->    
+                    <div class="image">
+                        <img class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/334700/334746.6.jpg" alt="">
+                    </div>
+                    <h1 class="zoomlink" style="margin-left: 23px;">All-round Amelia keeps India winless despite Ghosh Fifty</h2>
+                    <p style="margin-left: 23px;">Amelia scored an unbeaten 68 and took a three-for in a rain curtailed match</p>
+                    <hr>
+                   
+                    <div class="coverage"> <div class="coverage1" >></div> <div class="coverage2" >HIndi Coverage</div> </div> 
+                </div>
+            <!-- first endssssss -->
+                <!-- second startsssss -->
+                <div id="first">
+                    <div class="head">
+                      <h3>AGE OF BOWLING</h3>
+                    </div>
+                    <hr>
+                    <!---result starts-->
+                   
+                    <!-- ********result endsssss********** -->
+                    <!---image starts-->    
+                    <div class="image">
+                        <img class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/323000/323049.14.jpg" alt="">
+                    </div>
+                    <h1 class="zoomlink" style="margin-left: 23px;">Is this the greatest age for test bowling</h2>
+                    <p style="margin-left: 23px;">A deep dive into the stunning strike rates</p>
+                    <hr>
+                    <div class="coverage"> <div class="coverage1" >></div> <div class="coverage2" >Australian Cricket</div> </div> 
+    
+                </div>
+                <!-- second ends -->
+                <!-- third starts -->
+                <div id="first">
+                    <div class="head">
+                      <h3>IPL 2022</h3>
+                    </div>
+                    <hr>
+                    <!---result starts-->
+                   
+                    <!-- ********result endsssss********** -->
+                    <!---image starts-->    
+                    <div class="image">
+                        <img class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/312200/312222.jpg" alt="">
+                    </div>
+                    <h1 class="zoomlink" style="margin-left: 23px;">Agarkar to join Delhi Capitals as assistant coach</h2>
+                    <p style="margin-left: 23px;">His appointment follows the franchise not renewing the contracts of Mohammad Kaif, Ajay Ratra</p>
+                    <hr>
+                    <div class="coverage"> <div class="coverage1" >></div> <div class="coverage2" >Katich resigns as SRH assistant coach</div> </div> 
+                    
+                </div>
+                <!-- third ends -->
+                <div id="first">
+                    <div class="head">
+                      <h3>A WHIFF OF THE FUTURE</h3>
+                    </div>
+                    <hr>
+                    <!---result starts-->
+                   
+                    <!-- ********result endsssss********** -->
+                    <!---image starts-->    
+                    <div class="image">
+                        <img class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_f_345/lsci/db/PICTURES/CMS/295800/295805.jpg" alt="">
+                    </div>
+                    <h1 class="zoomlink" style="margin-left: 23px;">BCCI: 'We will speak to Saha and want to know if he was threatened'</h2>
+                    <p style="margin-left: 23px;">Saha later said he would not reveal the name of the journalist</p>
+                    <hr>
+                    <div class="coverage"> <div class="coverage1" >></div> <div class="coverage2" >Dravid: 'Saha deserved honesty, clarity'</div> </div> 
+                    <!-- <p style="margin-left: 23px; padding-bottom: 20px; "></p> -->
+                </div>
+                <!-- 4th ends -->
+            </div>
+            <div id="right">
+                    <div id="r_first">
+                        <!-- <h3>News Headlines</h3>
+                        <hr> -->
+                       
+                        <div class="quicklinks">
+                            <h4 style="margin-left: 15px;" >News Headlines</h4>
+                            <hr>
+                            <div class="d_flex"> <div class="angled" >></div> <div id="angledpara" > <p> Women's WC games May be nine-a-side </p> </div> </div>
+                            <div class="d_flex"> <div class="angled">></div> <div id="angledpara" > <p>Joe Root embraces No.3 berth </p></div> </div>
+                            <div class="d_flex"> <div class="angled">></div> <div id="angledpara"><p>Head: Away series define you as a player</p></div> </div>
+                            <div class="d_flex"> <div class="angled" >></div> <div id="angledpara"><p>Hales to make surprise return to PSL</p></div> </div>
+                            <div class="d_flex"> <div class="angled">></div> <div id="angledpara" ><p>Covid-19: Hasaranga tests positive again </p></div> </div>
+                            <div class="d_flex"> <div class="angled">></div> <div id="angledpara"><p>Buzz: Marcus Stoinis 'Hulks' up </p></div> </div>
+                        </div>
+                    </div>
+                    <img  class="advimg" src="https://tpc.googlesyndication.com/simgad/402907167951241154?" alt="">
+                    <!-- advertise ends -->
+                    <div class="timeline" >
+                        <div id="first" style="margin-top: 20px;">
+                            <!-- <div class="head"> -->
+                             
+                            <!---result starts-->
+                           
+                            <!-- ********result endsssss********** -->
+                            <!---image starts-->    
+                            <div  class="image">
+                                <img style="margin-top: 30px;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/168700/168743.5.jpg" alt="">
+                            </div>
+                            <h3 class="zoomlink" style="margin-left: 23px;">On This Day: Tendulkar makes the 1st ODI double</h2>
+                                <hr>
+                            <!-- <p style="margin-left: 23px;">Saha later said he would not reveal the name of the journalist</p> -->
+                           
+                            <!-- <p style="margin-left: 23px; padding-bottom: 20px; ">Dravid: 'Saha deserved honesty, clarity'</p> -->
+                        <!-- </div> -->
+                        <div  class="image">
+                            <img style="margin-top: 10px;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/334400/334498.2.png" alt="">
+                        </div>
+                        <h3 class="zoomlink" style="margin-left: 23px;">Quote Unquote: Who's saying that?</h2>
+                            <hr>
+
+                            <div  class="image">
+                                <img style="margin-top: 10px;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/332500/332592.5.png" alt="">
+                            </div>
+                            <h3 class="zoomlink" style="margin-left: 23px;">ESPNcricinfo Awards 2022</h2>
+                                <hr>
+
+                                <div  class="image">
+                                    <img style="margin-top: 10px;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/333600/333619.5.jpg" alt="">
+                                </div>
+                                <h3 style="padding-bottom: 20px; margin-left: 20px;" class="zoomlink" style="margin-left: 23px;">Photo feature: Mascot's in cricket</h2>
+
+                                    <img style="width: 100%;" src="https://tpc.googlesyndication.com/simgad/13683194396473605559?" alt="">
+
+                                    <div  class="image">
+                                        <img style="margin-top: 10px;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/331500/331580.5.jpg" alt="">
+                                    </div>
+                                    <h3 class="zoomlink" style="margin-left: 23px;">Photo Feature: cricket and big screens</h2>
+                                        <hr>
+
+                                        <div  class="image">
+                                            <img style="margin-top: 10px;" class="zoom" src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/328500/328507.5.jpg" alt="">
+                                        </div>
+                                        <h3  class="zoomlink" style="margin-left: 23px; padding-bottom: 20px;">Rankings: Who's leading in every format</h2>
+                                          
+                                    <!-- <hr> -->
+                    </div>
+
+                    <!-- news boxes ends -->
+            </div>
+        </div>     
+    </div>
+</div>
+<!-- main body ends -->
+</body>
+</html>
+<script>
+   document.querySelector(".question").addEventListener('click', gotoask(){
+    
+   });
+</script>

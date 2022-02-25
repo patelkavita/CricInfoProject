@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\project\\CricInfoProject"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
