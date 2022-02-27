@@ -138,8 +138,8 @@
   #sidebar {
     width: 20%;
     padding: 1rem 0.5rem;
-    height: 65vh;
-    border: 1px solid blue;
+    height: 70vh;
+    /* border: 1px solid blue; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
@@ -157,7 +157,7 @@
   #sidebar div{
     color: #03a9f4;
     border: 1px solid  #03a9f4;
-   padding: .8rem;
+   padding: .6rem;
    border-radius: 50px;
    padding-left: 2rem;
   }

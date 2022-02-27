@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Live Score Home</title>
+    <title>CricInfo-Live Score</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -12,10 +12,299 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/liveScoreHome.css">
-
+    <link rel="stylesheet" href="./css/mainmenu.css">
   </head>
   <body>
-    <div id="https://tpc.googlesyndication.com/simgad/5986589192844758015?">
+<!-- ######################################################################
+    ********************* BY kk***************
+    ############################################# -->
+
+    <nav>
+      <div class="wrapper"">
+        <div class="logo">
+          <a href="index.html"><img src=".\images\logo.png" alt="" srcset=""  /></a>
+        </div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn">
+            <i class="fas fa-times"></i>
+          </label>
+
+          <!--    **************** Live Score ****************** -->
+
+          <li id="live-score">
+            <a href="#1" class="desktop-item" title="Live Score" id="stickyNav12"> Live Scores</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="liveScoreHome.html">Live Scores Home</a></li>
+              <li><a href="#2">Week view</a></li>
+              <li><a href="#3">Month view</a></li>
+              <li><a href="#4">Season view</a></li>
+              <li><a href="#5">International calender</a></li>
+              <li><a href="#6">Desktop Scoreboard</a></li>
+            </ul>
+          </li>
+          <!-- *************************************** Series ********************** -->
+          <li>
+            <a href="#" class="desktop-item" title="Series">Series</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box series">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="ipl.html">IPL 2022</a></li>
+                    <li><a href="#2">Ranji Trophy</a></li>
+                    <li><a href="#2">West Indies v England</a></li>
+                    <li><a href="#2">Bangladesh v Afghanistan</a></li>
+                    <li><a href="#2">BPL 2022 </a></li>
+                    <li><a href="#2">Sheffield Shield</a></li>
+                    <li><a href="#2">Test Championship</a></li>
+                    <li><a href="#2">-Archives</a></li>
+                  </ul>
+                </div>
+
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#3">India v West Indies</a></li>
+                    <li><a href="#3"> IND-W in New Zealand</a></li>
+                    <li><a href="#3">Pakistan v Australia</a></li>
+                    <li><a href="#3">Oman T20Is</a></li>
+                    <li><a href="#3">CSA T20</a></li>
+                    <li><a href="#3">T20 World cup QLF</a></li>
+                    <li><a href="#3">CWS Super League</a></li>
+                  </ul>
+                </div>
+
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#4">India v Sri Lanka</a></li>
+                    <li><a href="#4">Australia v Sri Lanka</a></li>
+                    <li><a href="#4">New Zealand v South Africa</a></li>
+                    <li><a href="#4">PSL 2022</a></li>
+                    <li><a href="#4">Marsh Cup</a></li>
+                    <li><a href="#4">Women's World Cup</a></li>
+                    <li><a href="#4">-Future series-</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- ******************************************* Teams ******************* -->
+          <li>
+            <a href="TeamFinal.html" class="desktop-item" title="Teams">Teams</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box teams">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">Bangladesh</a></li>
+                    <li><a href="#">England</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">New Zealand</a></li>
+                    <li><a href="#">Pakistan</a></li>
+                    <li><a href="#">South Africa</a></li>
+                    <li><a href="#">Sri Lanka</a></li>
+                    <li><a href="#">West Indies</a></li>
+                    <li><a href="#">Zimbabwe</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#2">Afghanistan</a></li>
+                    <li><a href="#2">Ireland</a></li>
+                    <li><a href="#2">Namibia</a></li>
+                    <li><a href="#2">Nepal</a></li>
+                    <li><a href="#2">Neitherlands</a></li>
+                    <li><a href="#2">Oman</a></li>
+                    <li><a href="#2">PNG</a></li>
+                    <li><a href="#2">Scotland</a></li>
+                    <li><a href="#2">UAE</a></li>
+                    <li><a href="#2">USA</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- ********************************** News ******************************* -->
+
+          <li>
+            <a href="new2.html" class="desktop-item" title="News"> News</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="#1">News Home</a></li>
+              <li><a href="#1">Covid-19</a></li>
+              <li><a href="#1">Ball-tempering</a></li>
+              <li><a href="#1">Technology in cricket</a></li>
+              <li><a href="#1">Recism</a></li>
+            </ul>
+          </li>
+
+          <!-- ************************************* Features ****************** -->
+          <li>
+            <a href="features.html" class="desktop-item" title="Features" > Features</a>
+            <input type="checkbox" id="showDrop" />
+            <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+            <ul class="drop-menu">
+              <li><a href="#1">Features Home</a></li>
+              <li><a href="#1">Writers</a></li>
+              <li><a href="#1">Photo galleries</a></li>
+              <li><a href="#1">The Cricket Monthly</a></li>
+            </ul>
+          </li>
+
+          <!-- *************************************** Videos ********************** -->
+
+          <li>
+            <a href="#" class="desktop-item" title="Videos" >Videos</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box videos">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#3">Videos Home</a></li>
+                    <li><a href="#3">T20 Time Out Hindi</a></li>
+                    <li><a href="#3">Match Day</a></li>
+                    <li><a href="#3">Dream Big Champs</a></li>
+                    <li><a href="#3">Fantasy Pick</a></li>
+                    <li><a href="#3">Run Order</a></li>
+                    <li><a href="#3">25 Questions</a></li>
+                    <li><a href="#3">news and Analysis</a></li>
+                    <li><a href="#3">Interviews</a></li>
+                    <li><a href="#3">Press Conference</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#4">T20 Time Out</a></li>
+                    <li><a href="#4">Auction 2022</a></li>
+                    <li><a href="#4">Dream Big Stories</a></li>
+                    <li><a href="#4">Haa Ya Naa</a></li>
+                    <li><a href="#4">Polite Enquiries</a></li>
+                    <li><a href="#4">Newsroom</a></li>
+                    <li><a href="#4">Hindi Videos</a></li>
+                    <li><a href="#4">Match Analysis</a></li>
+                    <li><a href="#4">Features</a></li>
+                    <li><a href="#4">You Tube</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- ******************************************* Stats ******************* -->
+          <li>
+            <a href="#" class="desktop-item" title="Stats" >Stats</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box stats">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#5">Stats home</a></li>
+                    <li><a href="#5">IPL 2021</a></li>
+                    <li><a href="#5">SuperStats</a></li>
+                    <li><a href="#5">All records</a></li>
+                    <li><a href="#5">Grounds</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#6">AskCricinfo</a></li>
+                    <li><a href="#6">Statsguru</a></li>
+                    <li><a href="#6">2021 records</a></li>
+                    <li><a href="#6">Players</a></li>
+                    <li><a href="#6">Rankings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- ********************************** Edition IN *************************** -->
+          <li>
+            <a href="#" class="desktop-item" title="Edition IN" >Edition IN</a>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box edition">
+              <div class="content">
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#23">Africa</a></li>
+                    <li><a href="#23">Bangladesh</a></li>
+                    <li><a href="#23">India-Hindi</a></li>
+                    <li><a href="#23">Pakistan</a></li>
+                    <li><a href="#23">United Kingdom</a></li>
+                    <li><a href="#23">Global</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <ul class="mega-link">
+                    <li><a href="#23">Australia</a></li>
+                    <li><a href="#23">India</a></li>
+                    <li><a href="#23">New Zealand</a></li>
+                    <li><a href="#23">Sri Lanka</a></li>
+                    <li><a href="#23">United States</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+            <!-- ************************************* English ****************** -->
+            <li>
+              <a href="#1" class="desktop-item" title="english"> English</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              <ul class="drop-menu">
+                <li><a href="#1"><b>English</b></a></li>
+                <li><a href="#1"><pre> हिंदी</pre></a></li>
+              </ul>
+            </li>
+<!-- ********************************************* Notification Part ********************************** -->
+
+<li>
+<i class="fa-light fa-magnifying-glass icon-color"><a href="#1" class="desktop-item" title="Notifications">
+</a> </i>
+<input type="checkbox" id="showDrop" />
+<label for="showDrop" class="mobile-item">Dropdown Menu</label>
+<ul class="drop-menu">
+  <li><a href="#1"><b>English</b></a></li>
+  <li><a href="#1"><pre> हिंदी</pre></a></li>
+</ul>
+</li>
+
+
+
+
+
+
+<!-- ********************************************************************************** -->
+
+        </ul>
+      </div>
+    </nav>
+
+
+
+    
+
+
+
+    <!-- ######################################################################
+    ********************* BY Prakash***************
+    ############################################# -->
+    <div id="advimg">
       <img src="advertise.png" alt="" />
     </div>
 
@@ -95,8 +384,8 @@
             <p style="color: red; font-weight: bold;">ONGOING</p>
             <P>India Womens need 14runs in 13 balls</P>
             <div id="report">
-              <span>LIVE REPORT </span>
-              <span>MATCH SUMMERY </span>
+              <span class="repo">LIVE REPORT </span>
+              <span class="repo">MATCH SUMMERY </span>
               <!-- <span>ScoreCard </span>
               <span>Series Home</span> -->
             </div>
@@ -414,6 +703,7 @@
         <p>© 2022 ESPN Sports Media Ltd. All rights reserved</p>
       </div>
     </div>
+    
   </body>
 </html>
 

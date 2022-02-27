@@ -12,8 +12,8 @@
     flex-wrap: wrap;
     width: 80vw;
     height: auto;
-    margin: auto;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
+    /* margin-bottom: 1rem; */
     /* border: 1px solid red; */
     line-height: 40px;
     color: #48494a;
@@ -34,9 +34,9 @@
 #copyRight{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-    width: 80vw;
+    /* flex-wrap: wrap; */
+    margin: 2rem 1rem;
+    width: 83.5vw;
     margin: auto;
     /* border: 1px solid red; */
     padding: 2rem 0;

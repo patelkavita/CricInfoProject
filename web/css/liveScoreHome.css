@@ -136,12 +136,16 @@
       #match > div > img {
         width: 20px;
       }
+     
+      .repo{
+        color:#2b2c2d !important;
+      }
       #report > span {
         border: 1px solid #2b2c2d;
         font-size: 0.75rem;
         color: #2b2c2d;
         padding: 3px 6px;
-        margin: 0.3rem;
+        margin: 0.1rem;
         cursor: pointer;
         transition: 1s;
       }

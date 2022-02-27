@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+#navMenu{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 2rem 4rem;
+    width: 100vw;
+    height: 30px;
+    background-color: #038dcc;
+}
+.menu{
+    font-size: .7rem;
+    color: #d1d5dd;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-right: 1rem ;
+}
+.menu:hover{
+border-bottom: .1rem solid #d1d5dd; 
+}
+
+.menu:first-child{
+    border-bottom: .1rem solid #d1d5dd;
+    margin-right: 1rem ;
+}
+
+#card{
+    display: flex;
+    width: 100vw;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: #038dcc;
+}
+.cardDetail{
+    width: 25%;
+    height: 30vh;
+    color: #65676b;
+    padding: 0.1rem 1rem 1rem 1rem;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: .5rem;
+}
+.cardDetail>div>p:first-child{
+font-size: .6rem;
+font-weight: bolder;
+color: #57585a;
+}
+.cardDetail>p{
+    font-size: .5rem;
+    margin: .4rem 0;
+    font-weight: bold;
+    }
+.team{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: .5rem 0;
+}
+
+.image{
+ width: 20px;
+}
+
+.spantag{
+    border: .01rem solid #cdcfd4;
+    padding: 5px 1.5rem;
+    margin-top: 90px;
+    border-radius: 5px;
+    font-size: .7rem;
+}
+
+.main-carousel{
+    background-color: #038dcc;
+    padding: 0 4rem;
+    padding-bottom: 1rem;
+
+}
+/* .miniBar{
+    width: 100vw;
+    height: 40px;
+    background-color: #03a9f4!important;
+    position: relative;
+    /* z-index: 1; */
+/* } */ 
+
+/* ***********************************************************************
+################################### BY KK ####################################### 
+*********************************************************************** */
+
+
+ nav #main-menu {
+  position: sticky;
+  /* top: 0%;
+  z-index: 100; */
+    width: 95%;
+    background-color: #03a9f4!important;
+  }
+ 
+   nav .wrapper {
+    
+    max-width: 100vw;
+    padding: 0px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #03a9f4!important;
+  }
+  /* .wrapper .desktop-item{
+    position: sticky;
+    top:0;
+  
+  } */
+  .wrapper .logo img {
+    height: 30px;
+    width: auto;
+    padding-left: 50px;
+  }
+  /************************** for Main menu *********************/
+  .desktop-item {
+    color: #f0e8e8 !important;
+    /* background-color: #f403e0!important; */
+    margin-right: 25px;
+    position: relative;
+  }
+  .desktop-item:hover {
+    /* background-color: #14c4f0ab; */
+    z-index: 1;
+    position: relative;
+  }
+  
+  /*************************** for Links ***********************/
+  .wrapper .nav-links {
+    display: inline-flex;
+    
+  }
+  .nav-links li {
+    list-style: none;
+    margin-right: 5px;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 6px;
+    transition: all 0.3s ease;
+    color: rgba(10, 10, 10, 0.781);
+  }
+  .nav-links li a:hover {
+    font-weight: bold;
+  }
+  .nav-links .mobile-item {
+    display: none;
+  }
+  .nav-links .drop-menu {
+    position: absolute;
+    background: #fff;
+    width: 260px;
+    line-height: 50px;
+    top: 60px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  .nav-links li:hover .drop-menu,
+  .nav-links li:hover .mega-box {
+    transition: all 0s ease;
+
+    top: 350px;
+    opacity: 1;
+   
+    visibility: visible;
+  }
+  .drop-menu li a {
+    width: 100%;
+    display: block;
+    padding: 0px 0px 0px 15px;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+  .mega-box {
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    width: 80%;
+    padding: 0px 10px;
+    top: 100px;
+    opacity: 0px;
+    visibility: hidden;
+  }
+  
+  .mega-box .content {
+    background: #fff;
+    padding: 10px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 15px 15px;
+  }
+  .mega-box .content .row {
+    width: calc(45% -10px);
+    line-height: 2.6rem;
+  }
+  /******************** For Individual Mega - Menu ****************/
+  .series {
+    width: 75%;
+    margin: 0px 25%;
+  }
+  .teams {
+    width: 30%;
+    margin: 0px 40%;
+  }
+  .videos {
+    width: 43%;
+    margin: 0px 55%;
+  }
+  .stats {
+    width: 27%;
+    margin: 0px 70%;
+  }
+  .edition {
+    width: 35%;
+    margin: 0px 60%;
+  }
+  
+  /*********************** ************************/
+  .content .row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content .row .mega-links {
+    margin-left: -40px;
+    border-left: 1px solid rgba(255, 255, 255, 0.09);
+  }
+  .row .mega-links li {
+    padding: 0px 20px;
+  }
+  .row .mega-links li a {
+    padding: 0px;
+    padding: 0 20px;
+    font-size: 17px;
+    display: block;
+  }
+  .row .mega-links li a:hover {
+    color: #331010;
+  }
+  .wrapper .btn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper .btn.close-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  nav input {
+    display: none;
+  }
+  
+  #copyRight{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 95vw;
+    margin: auto;
+    padding: 2rem 0;
+    color: #2c2c2c;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    /* background-color: whitesmoke; */
+  }
+  #terms{
+    float: left;
+    margin: 0px 10px 0px 0px;
+  }
+  /* span{
+    padding-right: 8px;
+    font-size: 18px;
+  }
+  span:hover{
+    color: rgba(14, 91, 235, 0.74);
+  } */
+  #right{
+    float: right;
+    font-size: 16px;
+  }
+  
