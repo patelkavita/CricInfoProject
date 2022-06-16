@@ -3,7 +3,7 @@
   <h2> <a href="https://admiring-curie-4d4212.netlify.app/"> Click to see deployed Link of NetMeds </a></h2>
   
     # Project Detail
-   <p> netmeds is a one of India's most trusted pharmacies. it is a collaborative project built by 5 member team. tech used are HTML ,CSS and JavaScript. we have used netlify for deployment</p> 
+   <p>cricinfo is a online cricket information wesite it provide all information related cricket. it is a collaborative project built by 5 member team. tech used are HTML ,CSS and JavaScript. we have used netlify for deployment</p> 
   
   <h3> screen shot of netmeds clone website </h3>
   <img src ="https://github.com/patelkavita/CricInfoProject/blob/main/web/images/admiring-curie-4d4212.netlify.app_.png" />
