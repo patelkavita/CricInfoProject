@@ -16,9 +16,9 @@
 
 2. Kavita-Patel
 
-3.Ritik-Singh
+3. Ritik-Singh
 
-4.Sachin-Ingal
+4. Sachin-Ingal
 
 5. Sanjeev-Kumar
   
